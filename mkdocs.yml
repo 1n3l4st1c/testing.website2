@@ -1,0 +1,163 @@
+site_name: Production Operations
+
+repo_name: Repository
+repo_url: https://github.com/
+
+nav:
+  - Home:
+      - Home.md
+  - Roadmap:
+      - Roadmap.md
+  - KPIs:
+      - KPIs.md
+  - Who we are:
+      - Who_We_Are.md
+  - Documentation:
+      - Documentation.md
+  - Systems - Processes:
+      - Systems_Processes.md
+  - Source Code:
+      - Source_Code.md
+  - Updates - WiP:
+      - Updates.md
+  - Vacancies:
+      - Vacancies.md
+  - FAQs:
+      - FAQs.md
+  - Announcements:
+      - announcements.md
+  - Contact Us:
+      - contact_us.md
+theme:
+  name: material
+  features:
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - content.code.annotation
+    - announce.dismiss
+    - content.code.annotate
+    - content.code.copy
+    - content.tooltips
+    - navigation.indexes
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.instant.progress
+    - navigation.sections
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.tracking
+    - navigation.expand
+    - navigation.path
+    - navigation.footer
+    - toc.follow
+    #- toc.integrate
+
+  language: en
+  palette:
+    - scheme: material
+      toggle:
+        icon: material/lightbulb
+        name: Switch to dark mode
+      primary: custom
+      accent: purple 
+    - scheme: slate 
+      toggle:
+        icon: material/lightbulb-outline
+        name: Switch to light mode    
+      primary: custom
+      accent: purple
+
+  favicon: assets/images/favicon.png
+  logo: assets/images/logo.svg
+
+extra_css:
+  - stylesheets/extra.css
+  - stylesheets/neoteroi-mkdocs.min.css
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - admonition
+  - pymdownx.arithmatex:
+      generic: true
+  - footnotes
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.mark
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      normalize_issue_symbols: true
+      repo_url_shorthand: true
+      user: squidfunk
+      repo: mkdocs-material
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.snippets:
+      auto_append:
+        - includes/mkdocs.md
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+      combine_header_slug: true
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - neoteroi.cards
+  - neoteroi.projects
+  - neoteroi.timeline
+  - neoteroi.spantable
+
+plugins:
+  - search
+  - neoteroi.mkdocsoad:
+      use_pymdownx: true
+  - glightbox
+
+copyright: Production Operations deriv.com  
+
+extra:
+  generator: false
+
+  social:
+  - icon: fontawesome/solid/paper-plane
+    link: mailto:x-devops@deriv.com
+  - icon: fontawesome/brands/slack
+    link: https://deriv-group.slack.com/archives/G0D273GNA
+
+  homepage: http://127.0.0.1:8000/Home/

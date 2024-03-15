@@ -1,0 +1,36 @@
+:root {
+  --md-primary-fg-color:        #FFFFFF;
+  --md-primary-fg-color--light: #F6F7F8;
+  --md-primary-fg-color--dark:  #EBECEF;
+
+  --md-primary-bg-color:        #20242F;
+  --md-typeset-a-color:         #282C38;
+
+  --md-footer-bg-color:         #414652;
+
+  --md-typeset-a-color:         #ff444f;
+
+  .md-typeset h3 {
+      font-weight: 300;
+  }
+
+  /* Apply light mode styling to the header */
+  .md-header, .md-tabs {
+    background-color: var(--md-primary-bg-color); /* Use primary background color */
+    color: var(--md-primary-fg-color); /* Use primary text color */
+  }
+
+/* Apply dark mode styling to the header */
+.dark-mode .md-header, .dark-mode .md-tabs {
+    background-color: var(--md-primary-fg-color); /* Use light background color */
+    color: var(--md-primary-bg-color); /* Use light text color */
+  }
+
+
+
+}
+
+[data-md-color-accent=indigo] {
+  --md-accent-fg-color: #787D88;
+  --md-accent-fg-color--transparent: #CED0D6;
+}
